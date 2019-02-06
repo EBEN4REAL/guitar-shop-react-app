@@ -8,14 +8,11 @@ const RegisterLogin = (props) => {
                 <div className="register_login_container">
                     <div className="left">
                         <h1>New Customers</h1>
-                        <p>Some Content</p>
+                        <p>If you are a new customer create an account here.</p>
                         <Button
                             type="default"
                             title="Create an account"
                             linkTo="/register"
-                            addStyles={{ 
-                                margin: '10px 0 0 0'
-                             }}
                         />
                     </div>
                     <div className="right">

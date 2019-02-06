@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import { timingSafeEqual } from 'crypto';
 
 
 const Button = (props) => {
@@ -9,9 +10,8 @@ const Button = (props) => {
         switch(props.type){
             case "default": 
                 template = <Link
-                    className="Link_default"
+                    className="link_default"
                     to={props.linkTo}
-                    {...props.addStyles}
                     >
                     {props.title}
                 </Link>
