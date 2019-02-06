@@ -23,11 +23,21 @@ const Footer = (props) => {
                                         icon={faCompass}
                                         className="icon"
                                      />
-                                </div>
-                                <div className="info">
-                                    <div> Address</div>
-                                    <div>Washington DC</div>
-                                </div>
+                                    <div className="info">
+                                        <div> Address</div>
+                                        <div>Washington DC</div>
+                                    </div>
+                              </div>
+                              <div className="tag">
+                                    <FontAwesomeIcon
+                                        icon={faPhone}
+                                        className="icon"
+                                     />
+                                    <div className="info">
+                                        <div> Phone</div>
+                                        <div>090994455 </div>
+                                    </div>
+                              </div>
                             </div>
                         </div>
                         <div className="right">
