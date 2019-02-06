@@ -19,7 +19,12 @@ const RegisterLogin = (props) => {
                         <h2>
                             Registered Customers
                         </h2>
-                        <p>If yu have an accout please log in.</p>
+                        <p>If you have an accout please log in.</p>
+                        <Button
+                            type="default"
+                            title="Login"
+                            linkTo="/login"
+                        />
                     </div>
                 </div>
             </div>
