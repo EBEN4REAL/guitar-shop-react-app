@@ -28,7 +28,6 @@ const Footer = (props) => {
                                     <div> Address</div>
                                     <div>Washington DC</div>
                                 </div>
-
                             </div>
                         </div>
                         <div className="right">
