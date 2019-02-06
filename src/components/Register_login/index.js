@@ -16,7 +16,10 @@ const RegisterLogin = (props) => {
                         />
                     </div>
                     <div className="right">
-                        Login
+                        <h2>
+                            Registered Customers
+                        </h2>
+                        <p>If yu have an accout please log in.</p>
                     </div>
                 </div>
             </div>
