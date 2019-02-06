@@ -4,7 +4,7 @@ import axios from 'axios';
 class App extends Component {
 
   componentDidMount(){
-    axios.get("http://localhost:3002/api/product/brands").then(response => {
+    axios.get("/api/product/get_brands").then(response => {
       console.log(response);
     })
   }
