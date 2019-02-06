@@ -9,6 +9,14 @@ const RegisterLogin = (props) => {
                     <div className="left">
                         <h1>New Customers</h1>
                         <p>Some Content</p>
+                        <Button
+                            type="default"
+                            title="Create an account"
+                            LinkTo="/register"
+                            addStyles={{ 
+                                margin: '10px 0 0 0'
+                             }}
+                        />
                     </div>
                     <div className="right">
                         Login
