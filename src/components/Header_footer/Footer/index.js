@@ -61,7 +61,12 @@ const Footer = (props) => {
                             </div>
                         </div>
                         <div className="right">
-                            
+                            <h2>Be the first to know</h2>
+                            <div>
+                                <div>
+                                    Get all the latest Information.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
