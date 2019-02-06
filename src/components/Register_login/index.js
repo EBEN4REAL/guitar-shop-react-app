@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../utils/Button';
 
 const RegisterLogin = (props) => {
     return (
@@ -7,10 +8,10 @@ const RegisterLogin = (props) => {
                 <div className="register_login_container">
                     <div className="left">
                         <h1>New Customers</h1>
-                        <p>SOme Content</p>
+                        <p>Some Content</p>
                     </div>
                     <div className="right">
-                    
+                        Login
                     </div>
                 </div>
             </div>
