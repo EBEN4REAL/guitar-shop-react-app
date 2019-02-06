@@ -38,6 +38,26 @@ const Footer = (props) => {
                                         <div>090994455 </div>
                                     </div>
                               </div>
+                              <div className="tag">
+                                    <FontAwesomeIcon
+                                        icon={faClock}
+                                        className="icon"
+                                     />
+                                    <div className="info">
+                                        <div> Working  hours</div>
+                                        <div>090994455 </div>
+                                    </div>
+                              </div>
+                              <div className="tag">
+                                    <FontAwesomeIcon
+                                        icon={faEnvelope}
+                                        className="icon"
+                                     />
+                                    <div className="info">
+                                        <div> Email Address</div>
+                                        <div>eben@gmail.com </div>
+                                    </div>
+                              </div>
                             </div>
                         </div>
                         <div className="right">
