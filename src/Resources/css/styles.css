@@ -254,7 +254,7 @@ header .logo {
     font-family: 'Monoton', cursive;
     color: #ffffff;
     font-size: 40px;
-    padding: 11px 0px;
+    margin: 11px 0px;
 }
 
 header a {
@@ -322,7 +322,7 @@ footer .logo {
     font-family: 'Monoton', cursive;
     color: #ffffff;
     font-size: 40px;
-    padding: 11px 0px;
+    padding: 10px 0px;
     border-bottom: 1px solid #4d4d4d;
 }
 
