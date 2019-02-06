@@ -11,10 +11,15 @@ import {createStore, applyMiddleware} from 'redux';
 import promiseMiddleware from 'redux-promise';
 import ReduxThunk from 'redux-thunk';
 
-import Reducer from './store/reducers/reducers'
+import Reducer from './store/reducers/reducers';
+
+const createStoreWithMiddleware = applyMiddleware(promiseMiddleware, ReduxThunk)(createStore);
 
 ReactDOM.render(
-    <BrowserRouter>
+    <Provider>
+        <BrowserRouter store={createStoreWithMiddleware(Reducer)}>
         <Routes />
     </BrowserRouter>
+    </Provider>
+    
 , document.getElementById('root'));
