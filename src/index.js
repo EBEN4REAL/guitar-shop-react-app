@@ -17,9 +17,9 @@ const createStoreWithMiddleware = applyMiddleware(promiseMiddleware, ReduxThunk)
 
 ReactDOM.render(
     <Provider>
-        <BrowserRouter store={createStoreWithMiddleware(Reducer)}>
-        <Routes />
-    </BrowserRouter>
+        <BrowserRouter store={createStoreWithMiddleware(Reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())}>
+            <Routes />
+        </BrowserRouter>
     </Provider>
     
 , document.getElementById('root'));
