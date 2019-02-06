@@ -14,6 +14,27 @@ const Footer = (props) => {
                     <div className="logo">
                         Waves
                     </div>
+                    <div className="wrapper">
+                        <div className="left">
+                            <h2>Contact Information</h2>
+                            <div className="business_info">
+                                <div className="tag">
+                                    <FontAwesomeIcon
+                                        icon={faCompass}
+                                        className="icon"
+                                     />
+                                </div>
+                                <div className="info">
+                                    <div> Address</div>
+                                    <div>PCU</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="right">
+                            
+                        </div>
+                    </div>
                 </div>
             </footer>
 
