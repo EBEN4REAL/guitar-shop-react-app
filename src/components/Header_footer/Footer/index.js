@@ -26,7 +26,7 @@ const Footer = (props) => {
                                 </div>
                                 <div className="info">
                                     <div> Address</div>
-                                    <div>PCU</div>
+                                    <div>Washington DC</div>
                                 </div>
 
                             </div>
