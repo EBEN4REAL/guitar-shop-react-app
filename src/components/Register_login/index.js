@@ -7,6 +7,10 @@ const RegisterLogin = (props) => {
                 <div className="register_login_container">
                     <div className="left">
                         <h1>New Customers</h1>
+                        <p>SOme Content</p>
+                    </div>
+                    <div className="right">
+                    
                     </div>
                 </div>
             </div>
