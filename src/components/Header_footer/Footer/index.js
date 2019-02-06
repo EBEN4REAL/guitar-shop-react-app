@@ -9,6 +9,13 @@ import faEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope';
 const Footer = (props) => {
     return (
         <div>
+            <footer className="bck_b_dark">
+                <div className="container">
+                    <div className="logo">
+                        Waves
+                    </div>
+                </div>
+            </footer>
 
         </div>
     )
