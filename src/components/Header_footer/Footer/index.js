@@ -17,13 +17,13 @@ const Footer = (props) => {
                     <div className="wrapper">
                         <div className="left">
                             <h2>Contact Information</h2>
-                            <div className="business_info">
+                            <div className="business_nfo">
                                 <div className="tag">
                                     <FontAwesomeIcon
                                         icon={faCompass}
                                         className="icon"
                                      />
-                                    <div className="info">
+                                    <div className="nfo">
                                         <div> Address</div>
                                         <div>Washington DC</div>
                                     </div>
@@ -33,7 +33,7 @@ const Footer = (props) => {
                                         icon={faPhone}
                                         className="icon"
                                      />
-                                    <div className="info">
+                                    <div className="nfo">
                                         <div> Phone</div>
                                         <div>090994455 </div>
                                     </div>
@@ -43,7 +43,7 @@ const Footer = (props) => {
                                         icon={faClock}
                                         className="icon"
                                      />
-                                    <div className="info">
+                                    <div className="nfo">
                                         <div> Working  hours</div>
                                         <div>090994455 </div>
                                     </div>
@@ -53,7 +53,7 @@ const Footer = (props) => {
                                         icon={faEnvelope}
                                         className="icon"
                                      />
-                                    <div className="info">
+                                    <div className="nfo">
                                         <div> Email Address</div>
                                         <div>eben@gmail.com </div>
                                     </div>
