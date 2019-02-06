@@ -1,22 +1,30 @@
 import React from 'react';
-import Link from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 
-const button = (props) => {
+const Button = (props) => {
 
     const buttons = () => {
         let template = '';
         switch(props.type){
             case "default": 
-                template = <Link></Link>
+                template = <Link
+                    className="Link_default"
+                    to={props.linkTo}
+                    {...props.addStyles}
+                    >
+                    {props.title}
+                </Link>
                 break;
             default:
                 template = '';
         }
+
+        return template;
     }
     return (
         <div className="my_link">
-            {button()}
+            {buttons()}
         </div>
     )
 }

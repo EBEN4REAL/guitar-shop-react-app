@@ -12,7 +12,7 @@ const RegisterLogin = (props) => {
                         <Button
                             type="default"
                             title="Create an account"
-                            LinkTo="/register"
+                            linkTo="/register"
                             addStyles={{ 
                                 margin: '10px 0 0 0'
                              }}
