@@ -1,6 +1,7 @@
-import React , {component, Component} from 'react';
+import React , {Component} from 'react';
 import {connect} from 'react-redux';
 import FormField from '../utils/Form/FormField';
+import  {update} from '../utils/Form/FormActions';
 
  class Login extends Component {
 
@@ -42,7 +43,11 @@ import FormField from '../utils/Form/FormField';
         }
     }
     updateForm = (element) => {
-        // const newFormdata = update(element , this.state.formData, 'login');
+        const newFormdata = update(element , this.state.formData, 'login');
+        this.setState({
+            formError: false,
+            formData: newFormdata
+        })
     }
 
     submiForm = () => {

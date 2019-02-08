@@ -27,5 +27,8 @@ export const  validate = (element, formData=[]) => {
         newElement.validationMessage = validData[1];
     }
     newElement.touched = element.blur;
+    newFormData[element.id] = newElement;
+
+    return newFormData;
 }
 
