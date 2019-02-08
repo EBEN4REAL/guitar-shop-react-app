@@ -18,7 +18,6 @@ import FormField from '../utils/Form/FormField';
                 },
                 validation: {
                     required: true,
-                    email: true
                 },
                 valid: false,
                 touched: false,

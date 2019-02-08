@@ -1,12 +1,14 @@
 
 
 export const  validate = (element, formData=[]) => {
-    let error = [true, ''];
+    let errorMessage = [true, ''];
 
     if(element.validation.required){
-        const valid = element.value.trim() === '';
-        const message = `${valid ? 'This field is required' : ''}`
+        const valid = element.value.trim() !== '';
+        const message = !valid ? 'This field is required' : '';
+        errorMessage = !valid ? [valid, message] : errorMessage
     }
+    return errorMessage;
 }
 
 
@@ -21,6 +23,9 @@ export const  validate = (element, formData=[]) => {
     
     if(element.blur){
         let validData = validate(newElement, formData);
+        newElement.valid = validData[0];
+        newElement.validationMessage = validData[1];
     }
+    newElement.touched = element.blur;
 }
 
