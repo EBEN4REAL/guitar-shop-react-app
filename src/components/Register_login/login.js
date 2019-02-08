@@ -30,7 +30,7 @@ import FormField from '../utils/Form/FormField';
                  elementConfig: {
                      name: 'password',
                      type: 'password',
-                     placeholder: 'Enter your email'
+                     placeholder: 'Enter your password'
                  },
                  validation: {
                      required: true,
@@ -42,8 +42,8 @@ import FormField from '../utils/Form/FormField';
              }
         }
     }
-    updateForm = () => {
-
+    updateForm = (element) => {
+        // const newFormdata = update(element , this.state.formData, 'login');
     }
 
     submiForm = () => {
@@ -56,6 +56,11 @@ import FormField from '../utils/Form/FormField';
                     <FormField 
                         id={'email'}
                         formData={this.state.formData.email}
+                        changed={(element) => this.updateForm(element)}
+                    />
+                    <FormField 
+                        id={'password'}
+                        formData={this.state.formData.password}
                         changed={(element) => this.updateForm(element)}
                     />
                 </form>
