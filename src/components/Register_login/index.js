@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../utils/Button';
+import Login from '../Register_login/login';
 
 const RegisterLogin = (props) => {
     return (
@@ -20,6 +21,7 @@ const RegisterLogin = (props) => {
                             Registered Customers
                         </h2>
                         <p>If you have an accout please log in.</p>
+                        <Login />
                         <Button
                             type="default"
                             title="Login"

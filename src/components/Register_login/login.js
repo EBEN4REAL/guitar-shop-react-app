@@ -52,11 +52,11 @@ import FormField from '../utils/Form/FormField';
      render(){
          return (
              <div className="signin_wrapper">
-                <form onSubmit={(e) => this.submiForm(e)}>
+                <form onSubmit={(event) => this.submiForm(event)}>
                     <FormField 
-                        id='email'
-                        formData={this.state.formData}
-                        changed={(e) => this.updateForm(e)}
+                        id={'email'}
+                        formData={this.state.formData.email}
+                        changed={(element) => this.updateForm(element)}
                     />
                 </form>
              </div>
