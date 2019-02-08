@@ -1,7 +1,7 @@
 
 
-export const  validate = () => {
-
+export const  validate = (element, formData=[]) => {
+    let error = [true, ''];
 }
 
 
@@ -15,7 +15,7 @@ export const  validate = () => {
     newElement.value = element.event.target.value;
     
     if(element.blur){
-        let validData = validate(newElement);
+        let validData = validate(newElement, formData);
     }
 }
 
