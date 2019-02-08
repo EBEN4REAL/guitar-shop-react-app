@@ -34,7 +34,7 @@ import  {update} from '../utils/Form/FormActions';
                  },
                  validation: {
                      required: true,
-                     email: true
+                     password: true
                  },
                  valid: false,
                  touched: false,
@@ -43,7 +43,9 @@ import  {update} from '../utils/Form/FormActions';
         }
     }
     updateForm = (element) => {
+        console.log(element);
         const newFormdata = update(element , this.state.formData, 'login');
+        console.log(newFormdata);
         this.setState({
             formError: false,
             formData: newFormdata
