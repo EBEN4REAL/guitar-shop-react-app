@@ -1,5 +1,5 @@
 
- const  validate = (element, formData=[]) => {
+ export const  validate = (element, formData=[]) => {
     let error = [true, ''];
 
     if(element.validation.required){

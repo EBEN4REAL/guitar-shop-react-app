@@ -1,42 +1,51 @@
 import React from 'react';
 
 const FormField = ({formData, changed, id}) => {
+    console.log(formData);
     const showError = () => {
-
         let errorMessage = null;
 
         if(formData.validation && !formData.valid){
-            console.log(formData);
-            console.log(formData.validationMessage);
+            console.log("yes");
             errorMessage = (
                 <div className="error_label">
-                    {formData.validationMessage}
+                   {formData.validationMessage}
                 </div>
             )
         }
+
 
         return errorMessage
     }
         
 
-    let formTemplate = null;
-    switch (formData.elementType) {
-        case 'input':
-            formTemplate = <input 
-                {...formData.elementConfig}
-                value={formData.value}
-                onBlur={(event) => changed({event, id, blur:true})}
-                onChange={(event) => changed({event,id})}
-                />
-                {showError()}
+   
+    const renderTemplate = () => {
+        let formTemplate = null;
+
+        switch(formData.elementType){
+            case('input'):
+                formTemplate = (
+                    <div className="formBlock">
+                        <input
+                            {...formData.elementConfig}
+                            value={formData.value}
+                            onBlur={(event)=> changed({event,id,blur:true})}
+                            onChange={(event)=> changed({event,id}) }
+                        />
+                        {showError()}
+                    </div>
+                )
             break;
-    
-        default:
-            break;
+            default:
+                formTemplate = null;
+        }
+
+        return formTemplate;
     }
     return (
         <div>
-            {formTemplate}
+            {renderTemplate()}
         </div>
     )
 }
