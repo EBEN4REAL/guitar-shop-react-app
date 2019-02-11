@@ -12,7 +12,7 @@ export const Auth = (component, boolean, adminRoute = null) => {
             if(this.state.loading){
                 return (
                     <div className="main_loader">
-                    
+                        <CircularProgress style={{ color: "#2196f3" }}></CircularProgress>
                     </div>
                 )
             }
