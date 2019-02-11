@@ -1,9 +1,10 @@
 import React from 'react';
+import UserLayout from '../../hoc/user';
 
 const  UserDashboard = () =>{
     return (
         <div>
-            Dashboard
+            <UserLayout />
         </div>
     )
 }
