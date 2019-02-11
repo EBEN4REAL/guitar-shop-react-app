@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {LOGIN_USER} from '../types';
 import {REGISTER_USER} from '../types';
+import {AUTH_USER} from '../types';
 
 import {USER_SERVER} from '../../../components/utils/misc'
 
@@ -18,5 +19,14 @@ export const registerUser = (dataToSubmit) => {
     return {
         type: REGISTER_USER,
         payload: request
+    }
+}
+
+export const  auth = () => {
+    const req = axios.get(`${USER_SERVER}/auth`).then(res => res.data);
+
+    return {
+        type: AUTH_USER,
+        payload: req
     }
 }

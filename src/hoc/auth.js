@@ -8,6 +8,9 @@ export default function (ComposedClass, reload, adminRoute = null)  {
         state = {
             loading: true
         }
+        componentDidMount() {
+            this.props.dispatch(auth())
+        }
         render(){
             if(this.state.loading){
                 return (
@@ -17,7 +20,7 @@ export default function (ComposedClass, reload, adminRoute = null)  {
                 )
             }
             return (
-                <ComposedClass {...this.props} />
+                <ComposedClass {...this.props}  user={this.props.user}/>
             );
         }
     }
