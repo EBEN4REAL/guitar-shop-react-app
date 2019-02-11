@@ -1,12 +1,10 @@
 import React from 'react';
 
 const FormField = ({formData, changed, id}) => {
-    console.log(formData);
     const showError = () => {
         let errorMessage = null;
 
         if(formData.validation && !formData.valid){
-            console.log("yes");
             errorMessage = (
                 <div className="error_label">
                    {formData.validationMessage}

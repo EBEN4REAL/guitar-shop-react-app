@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../utils/Button';
 import Login from '../Register_login/login';
+import Register from '../Register_login/register';
 
 const RegisterLogin = (props) => {
     return (
@@ -10,11 +11,7 @@ const RegisterLogin = (props) => {
                     <div className="left">
                         <h1>New Customers</h1>
                         <p>If you are a new customer create an account here.</p>
-                        <Button
-                            type="default"
-                            title="Create an account"
-                            linkTo="/register"
-                        />
+                        <Register />
                     </div>
                     <div className="right">
                         <h2>
@@ -22,11 +19,6 @@ const RegisterLogin = (props) => {
                         </h2>
                         <p>If you have an accout please log in.</p>
                         <Login />
-                        <Button
-                            type="default"
-                            title="Login"
-                            linkTo="/login"
-                        />
                     </div>
                 </div>
             </div>
