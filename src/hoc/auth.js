@@ -6,13 +6,13 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 export default function (ComposedClass, reload, adminRoute = null)  {
     class AuthenticationCheck extends Component {
         state = {
-            loading: false
+            loading: true
         }
         render(){
             if(this.state.loading){
                 return (
                     <div className="main_loader">
-                        <CircularProgress style={{ color: "#2196f3" }}></CircularProgress>
+                        <CircularProgress style={{ color: "#2196f3" }} thickness={7}></CircularProgress>
                     </div>
                 )
             }
