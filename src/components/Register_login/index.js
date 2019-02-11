@@ -1,6 +1,5 @@
 import React from 'react';
 import Login from '../Register_login/login';
-import Register from '../Register_login/register';
 
 const RegisterLogin = (props) => {
     return (
