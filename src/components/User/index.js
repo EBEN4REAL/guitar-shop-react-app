@@ -23,8 +23,8 @@ const  UserDashboard = () =>{
                 </div>
                 <div className="user_nfo_panel">
                     <h1>Histroy purchases</h1>
-                    <div>
-                        
+                    <div className="user+product_block_wrapper">
+                        History
                     </div>
                 </div>
                
