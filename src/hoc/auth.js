@@ -17,9 +17,7 @@ export const Auth = (component, boolean, adminRoute = null) => {
                 )
             }
             return (
-                <div>
-    
-                </div>
+                <component />
             )
         }
     }
