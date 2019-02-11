@@ -13,6 +13,7 @@ export  const Auth = (component, boolean, adminRoute = null) => {
             )
         }
     }
+    return connect()(AuthenticationCheck);
 }
 
 
