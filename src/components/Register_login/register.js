@@ -4,7 +4,7 @@
  import FormField from '../../components/utils/Form/FormField';
  import  {update, generateData, isFomValid} from '../utils/Form/FormActions';
  import {registerUser} from '../../store/actions/user_actions/user_actions';
- import Modal from '@material-ui/core/Modal';
+ import Modal from '@material-ui/core/Dialog';
 
  class Register extends Component {
      state = {
