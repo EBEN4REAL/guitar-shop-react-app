@@ -5,7 +5,7 @@ import Layout from './hoc/Layout';
 import RegisterLogin from  './components/Register_login';
 import Register from './components/Register_login/register';
 import UserDashboard from './components/User';
-import {Auth} from './hoc/auth'
+import Auth from './hoc/auth'
 
 
 const Routes = () => {

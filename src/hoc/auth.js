@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {auth} from '../store/actions/user_actions/user_actions';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-export const Auth = (component, boolean, adminRoute = null) => {
+export default function (ComposedClass, reload, adminRoute = null)  {
     class AuthenticationCheck extends Component {
         state = {
             loading: false
@@ -17,8 +17,8 @@ export const Auth = (component, boolean, adminRoute = null) => {
                 )
             }
             return (
-                <component />
-            )
+                <ComposedClass />
+            );
         }
     }
     function  mapStateToProps(state){
