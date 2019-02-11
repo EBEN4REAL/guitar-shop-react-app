@@ -6,7 +6,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 export const Auth = (component, boolean, adminRoute = null) => {
     class AuthenticationCheck extends Component {
         state = {
-            loading: true
+            loading: false
         }
         render(){
             if(this.state.loading){
