@@ -109,7 +109,7 @@
                         formSuccess: true
                     });
                     setTimeout(() => {
-                        this.props.history.push('/regiater_login');
+                        this.props.history.push('/register_login');
                     }, 3000)
                 }
              }).catch(e => {
