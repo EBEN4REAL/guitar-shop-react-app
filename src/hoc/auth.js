@@ -17,7 +17,7 @@ export default function (ComposedClass, reload, adminRoute = null)  {
                 )
             }
             return (
-                <ComposedClass />
+                <ComposedClass {...this.props} />
             );
         }
     }
