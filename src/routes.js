@@ -12,11 +12,11 @@ const Routes = () => {
   return (
     <Layout>
       <Switch>
-        <Route path="/user/dashboard" exact component={Auth(UserDashboard)} />
+        <Route path="/user/dashboard" exact component={Auth(UserDashboard, true)} />
 
-        <Route path="/register" exact component={Auth(Register)} />
-        <Route path="/" exact component={Auth(Home)} />
-        <Route path="/register_login" exact component={Auth(RegisterLogin)} />
+        <Route path="/register" exact component={Auth(Register, false)} />
+        <Route path="/" exact component={Auth(Home, null)} />
+        <Route path="/register_login" exact component={Auth(RegisterLogin, false)} />
       </Switch>
     </Layout>
     
