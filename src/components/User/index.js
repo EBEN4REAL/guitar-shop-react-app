@@ -34,11 +34,5 @@ const  UserDashboard = ({user}) =>{
     )
 }
 
-// const mapStateToProps = (state) => {
-//     return {
-//         userData: state.user_data
-//     }
-// }
 
-// export default connect(mapStateToProps)(UserDashboard);
 export default UserDashboard;
