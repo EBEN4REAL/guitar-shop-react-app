@@ -33,7 +33,7 @@ class Header extends Component {
                 public: true
             },
             {
-                name: "Log iooututn",
+                name: "Log out",
                 linkTo: '/user_logout',
                 public: false
             }
@@ -49,7 +49,9 @@ class Header extends Component {
                         list.push(item);
                     }
                 }else{
-
+                    if(item.name !== 'Log in'){
+                        list.push(item);
+                    }
                 }
             })
         }
