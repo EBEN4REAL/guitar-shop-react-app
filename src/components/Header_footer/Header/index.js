@@ -41,7 +41,11 @@ class Header extends Component {
         ]
     }
     logoutHandler = (item, i) => {
-        this.props.dispatch(logoutUser()).then(res => res.success);
+        this.props.dispatch(logoutUser()).then(res =>{
+            if(res.payload.success){
+                this.props.history.push('/register_login');
+            }
+        });
         this.props.history.push('/register_login');
     }
     defaultLik = (item, i) => ( 
