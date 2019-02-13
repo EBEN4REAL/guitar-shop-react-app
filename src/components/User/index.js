@@ -3,18 +3,16 @@ import UserLayout from '../../hoc/user';
 import Button from '../utils/Button';
 import {connect} from 'react-redux';
 
-const  UserDashboard = (props) =>{
-
-    console.log(props);
+const  UserDashboard = ({user}) =>{
     return (
         <div>
             <UserLayout>
                 <div className="user_nfo_panel">
                     <h1>User information</h1>
                     <div>
-                        <span>Name: {props.user.user_data.name}</span>
-                        <span>Last Name: {props.user.user_data.lstname}</span>
-                        <span>Email: {props.user.user_data.email}</span>
+                        <span>Name: {user.user_data.name}</span>
+                        <span>Last Name: {user.user_data.lstname}</span>
+                        <span>Email: {user.user_data.email}</span>
                     </div>
                     <Button
                         type="default"
