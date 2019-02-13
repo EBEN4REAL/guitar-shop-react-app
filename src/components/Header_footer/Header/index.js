@@ -45,7 +45,7 @@ class Header extends Component {
                 key={i}
                 onClick={() => this.logoutHanler()}
             >
-
+            {item.name}
             </div>
         :
         <Link to={item.linkTo} key={i}>
