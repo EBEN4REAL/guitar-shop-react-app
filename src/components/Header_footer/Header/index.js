@@ -53,8 +53,12 @@ class Header extends Component {
                         list.push(item);
                     }
                 }
-            })
+            });
         }
+
+        return list.map((item, i) => {
+            return this.defaultLik(item, i);
+        });
     }
     render(){
         return (
