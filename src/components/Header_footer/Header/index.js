@@ -62,7 +62,12 @@ class Header extends Component {
         }
 
         return list.map((item, i) => {
-            return this.defaultLik(item, i);
+            if(item.name === 'My Cart'){
+                return this.cartLink(item,i);
+            }else{
+                return this.defaultLik(item, i);
+            }
+           
         });
     }
     render(){
