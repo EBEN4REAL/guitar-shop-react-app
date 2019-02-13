@@ -44,6 +44,12 @@ class Header extends Component {
             {item.name}
         </Link>
     )
+    cartLink = (item) => {
+        
+        return (
+
+        )
+    }
     showLinks = (type) => {
         let list = [];
 
