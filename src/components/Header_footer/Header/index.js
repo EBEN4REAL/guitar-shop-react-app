@@ -1,6 +1,7 @@
 import React , {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
+import  {logoutUser} from '../../../store/actions/user_actions/user_actions';
 
 class Header extends Component {
     state = {
@@ -43,7 +44,7 @@ class Header extends Component {
         item.name === 'Log out' ?
             <div className="log_out_link"
                 key={i}
-                onClick={() => this.logoutHanler()}
+                onClick={() => this.logoutHandler()}
             >
             {item.name}
             </div>
