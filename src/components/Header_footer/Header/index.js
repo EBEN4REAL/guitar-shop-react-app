@@ -39,7 +39,12 @@ class Header extends Component {
             }
         ]
     }
-    defaultLik = (item, i) => (
+    defaultLik = (item, i) => ( 
+        item.name === 'Log out' ?
+            <div>
+
+            </div>
+        :
         <Link to={item.linkTo} key={i}>
             {item.name}
         </Link>
@@ -48,7 +53,7 @@ class Header extends Component {
         const user = this.props.user.user_data
         return (
             <div className="cart_link" key={i}>
-                <span>{user.cart ? user.cart.length : 0}</span>
+                <span>{user.cart.length > 0 ? user.cart.length : 0}</span>
                 <Link to={item.linkTo}>
                     {item.name}
                 </Link>
