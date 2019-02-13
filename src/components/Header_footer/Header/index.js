@@ -19,6 +19,21 @@ class Header extends Component {
                 name: "My Cart",
                 linkTo: '/user/cart',
                 public: false
+            },
+            {
+                name: "My Account",
+                linkTo: '/user/cart',
+                public: false
+            },
+            {
+                name: "Log in",
+                linkTo: '/register_login',
+                public: true
+            },
+            {
+                name: "Log iooututn",
+                linkTo: '/user_logout',
+                public: false
             }
         ]
     }
