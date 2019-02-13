@@ -41,7 +41,10 @@ class Header extends Component {
     }
     defaultLik = (item, i) => ( 
         item.name === 'Log out' ?
-            <div>
+            <div className="log_out_link"
+                key={i}
+                onClick={() => this.logoutHanler()}
+            >
 
             </div>
         :
