@@ -11,16 +11,16 @@ export default function (ComposedClass, reload, adminRoute = null)  {
         componentDidMount() {
             this.props.dispatch(auth()).then(res => {
                 let user = this.props.user_data;
-                if(!user.isAuth){
-                    if(reload){
-                        
-                    }
-                }else{
+                // if(!user.isAuth){
+                //     if(reload){
+                //         this.props.history.push
+                //     }
+                // }else{
 
-                }
+                // }
 
                 this.setState({loading: false})
-                console.log(this.props.user.user_data);
+                console.log(this.props.user_data);
             })
         }
         render(){
