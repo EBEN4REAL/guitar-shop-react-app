@@ -9,18 +9,19 @@ export default function (ComposedClass, reload, adminRoute = null)  {
             loading: true
         }
         componentDidMount() {
+            console.log(this.props);
             this.props.dispatch(auth()).then(res => {
-                let user = this.props.user_data;
-                // if(!user.isAuth){
-                //     if(reload){
-                //         this.props.history.push
-                //     }
-                // }else{
+                let user = this.props.user.user_data;
+                if(!user.isAuth){
+                    if(reload){
+                        this.props.history.push("/register_login");
+                    }
+                }else{
 
-                // }
+                }
 
                 this.setState({loading: false})
-                console.log(this.props.user_data);
+                console.log(this.props.user.user_data);
             })
         }
         render(){
