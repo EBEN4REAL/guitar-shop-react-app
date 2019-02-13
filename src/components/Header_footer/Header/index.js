@@ -44,10 +44,12 @@ class Header extends Component {
             {item.name}
         </Link>
     )
-    cartLink = (item) => {
-        
+    cartLink = (item,i) => {
+        const user = this.props.user.user_data
         return (
+            <div className="cart_link" key={i}>
 
+            </div>
         )
     }
     showLinks = (type) => {
