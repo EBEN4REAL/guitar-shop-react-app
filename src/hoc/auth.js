@@ -17,7 +17,9 @@ export default function (ComposedClass, reload, adminRoute = null)  {
                         this.props.history.push("/register_login");
                     }
                 }else{
-
+                    if(reload === false){
+                        this.props.history.push('/user/dashboard')
+                    }
                 }
 
                 this.setState({loading: false})
