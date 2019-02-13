@@ -39,6 +39,21 @@ class Header extends Component {
             }
         ]
     }
+    showLinks = (type) => {
+        let list = [];
+
+        if(this.props.user.user_data){
+            type.forEach(item => {
+                if(!this.props.user.user_data.isAuth){
+                    if(item.public === true){
+                        list.push(item);
+                    }
+                }else{
+
+                }
+            })
+        }
+    }
     render(){
         return (
             <header className="bck_b_light">
@@ -50,10 +65,10 @@ class Header extends Component {
                     </div>
                      <div className="right">
                         <div className="top">
-                            LINKS
+                        {this.showLinks(this.state.user)}
                         </div>
                          <div className="bottom">
-                            LINKS
+                            {this.showLinks(this.state.page)}
                         </div>
                     </div>
                 </div>
