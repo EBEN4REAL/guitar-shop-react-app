@@ -39,6 +39,11 @@ class Header extends Component {
             }
         ]
     }
+    defaultLik = (item, i) => (
+        <Link to={item.linkTo} key={i}>
+            {item.name}
+        </Link>
+    )
     showLinks = (type) => {
         let list = [];
 
