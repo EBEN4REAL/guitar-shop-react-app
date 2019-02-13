@@ -1,6 +1,18 @@
 import React , {Component} from 'react';
 
 class Header extends Component {
+    state = {
+        page: [
+            {
+                name: "Home",
+                linkTo: '/',
+                public: true
+            }
+        ],
+        user: [
+
+        ]
+    }
     render(){
         return (
             <header className="bck_b_light">
