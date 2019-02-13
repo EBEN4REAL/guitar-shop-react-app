@@ -13,8 +13,8 @@ const  UserDashboard = (props) =>{
                     <h1>User information</h1>
                     <div>
                         <span>Name: {props.user.user_data.name}</span>
-                        <span>Last Name</span>
-                        <span>Email</span>
+                        <span>Last Name: {props.user.user_data.lstname}</span>
+                        <span>Email: {props.user.user_data.email}</span>
                     </div>
                     <Button
                         type="default"
