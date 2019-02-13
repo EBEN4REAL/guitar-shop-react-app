@@ -1,7 +1,8 @@
 import React , {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import  {logoutUser} from '../../../store/actions/user_actions/user_actions';
+
 
 class Header extends Component {
     state = {
@@ -127,4 +128,4 @@ function mapStateToProps (state) {
     }
 }
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps)(withRouter(Header));
