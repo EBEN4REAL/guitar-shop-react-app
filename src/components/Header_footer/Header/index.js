@@ -7,10 +7,19 @@ class Header extends Component {
                 name: "Home",
                 linkTo: '/',
                 public: true
+            },
+            {
+                name: "Guitars",
+                linkTo: '/shop',
+                public: true
             }
         ],
         user: [
-
+            {
+                name: "My Cart",
+                linkTo: '/user/cart',
+                public: false
+            }
         ]
     }
     render(){
