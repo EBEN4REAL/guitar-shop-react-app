@@ -19,7 +19,7 @@ const Cardblock = (props) => {
                 {
                     props.title ? 
                         <div className="title">
-                            props.title
+                            {props.title}
                         </div>
 
                     : null
