@@ -1,18 +1,18 @@
 import React from 'react';
 
 const Cardblock = (props) => {
-    const renderCards = (cardList) => (
-        props.list ? 
-            props.list.map((Cardblock) => {
-                return (
-                    <div>
-                        'CARD'
-                    </div>
-                ) 
-            })
+    // const renderCards = (cardList) => (
+    //     props.list ? 
+    //         props.list.map((Cardblock) => {
+    //             return (
+    //                 <div>
+    //                     'CARD'
+    //                 </div>
+    //             ) 
+    //         })
 
-        : null
-    )
+    //     : null
+    // )
     return (
         <div className="card_block">
             <div className="container">
@@ -28,7 +28,7 @@ const Cardblock = (props) => {
                     display: 'flex',
                     flexWrap: 'wrap'
                  }}>
-                    {renderCards(props.list)}
+                    {/* {renderCards(props.list)} */}
                  </div>
             </div>
         </div>
