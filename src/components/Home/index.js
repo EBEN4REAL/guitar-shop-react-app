@@ -13,6 +13,10 @@ class Home extends Component {
             .then(res => {
                 console.log(res.payload);
             })
+        this.props.dispatch(getProductsBySale())
+            .then(res => {
+                console.log(res.payload)
+            })
 
         console.log(this.props);
     }
