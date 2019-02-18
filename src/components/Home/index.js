@@ -31,7 +31,9 @@ class Home extends Component {
 }
 const mapStateToProps = (state) => {
     return {
-        products: state.products
+        productsByArrival: state.byArrival,
+        productsBySales: state.bySale
+
     }
 }
 export default connect(mapStateToProps)(Home);
