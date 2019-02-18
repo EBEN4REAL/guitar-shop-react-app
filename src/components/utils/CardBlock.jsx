@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Cardblock = (props) => {
+    const renderCards = (cardList) => {
+        
+    }
     return (
         <div className="card_block">
             <div className="container">
