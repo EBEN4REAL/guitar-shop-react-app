@@ -26,7 +26,7 @@ class Home extends Component {
             <div>
                 <HomeSlider />
                 <CardBlock
-                    
+                    list={this.props.productsByArrival}
                 />
                 <HomePromotion />
             </div>
