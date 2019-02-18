@@ -7,10 +7,9 @@ import {
 const  rootReducer =  (state={} , action) => {
    switch(action.type){
        case GET_PRODUCTS_BY_ARRIVAL:
-           return {...state, loginSuccess: action.payload }
+           return {...state, }
        case GET_PRODUCTS_BY_SALE:
-           return {...state, loginSuccess: action.payload }
-           return {...state}
+           return {...state,  }
        default:
            return state;
    }
