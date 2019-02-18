@@ -1,8 +1,6 @@
 import axios from 'axios';
-import {LOGIN_USER} from '../types';
-import {REGISTER_USER} from '../types';
-import {AUTH_USER} from '../types';
-import  {LOGOUT_USER} from '../types.js';
+import {GET_PRODUCTS_BY_SALE} from '../types';
+import {GET_PRODUCTS_BY_ARRIVAL} from '../types';  
 
 import {PRODUCT_SERVER}  from '../../../components/utils/misc';
 
