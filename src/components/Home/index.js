@@ -1,13 +1,16 @@
 import React , {Component} from 'react';
 import {connect} from 'react-redux';
 
-import {getProductsBySale, getProductsBySale} from '../../store/actions/product_actions/product_actions';
+import {getProductsByArrival, getProductsBySale} from '../../store/actions/product_actions/product_actions';
 import HomeSlider from './home_slider';
 import HomePromotion from './home_promotion';
 
 
 
 class Home extends Component {
+    componentDidMount(){
+        this.props.dispatch(getProductsBySale());
+    }
     render(){
         return(
             <div>
