@@ -12,6 +12,12 @@ const Cardblock = (props) => {
 
                     : null
                 }
+                <div style={{ 
+                    display: 'flex',
+                    flexWrap: 'wrap'
+                 }}>
+                    {renderCards(props.list)}
+                 </div>
             </div>
         </div>
     )
