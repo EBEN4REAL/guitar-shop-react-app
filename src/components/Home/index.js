@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import {getProductsByArrival, getProductsBySale} from '../../store/actions/product_actions/product_actions';
 import HomeSlider from './home_slider';
 import HomePromotion from './home_promotion';
+import CardBlock from '../../components/utils/CardBlock';
 
 
 
@@ -24,6 +25,9 @@ class Home extends Component {
         return(
             <div>
                 <HomeSlider />
+                <CardBlock
+                    
+                />
                 <HomePromotion />
             </div>
         )
