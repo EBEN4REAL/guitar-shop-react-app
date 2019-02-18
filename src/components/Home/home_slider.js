@@ -58,7 +58,6 @@ const HomeSlider = (props) => {
             ))
         )
     }
-    console.log(generateSlides);
     return (
         <div className="featured_container">
             <Slider {...settings}>

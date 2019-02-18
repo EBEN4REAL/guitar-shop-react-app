@@ -9,7 +9,12 @@ import HomePromotion from './home_promotion';
 
 class Home extends Component {
     componentDidMount(){
-        this.props.dispatch(getProductsBySale());
+        this.props.dispatch(getProductsByArrival())
+            .then(res => {
+                console.log(res.payload);
+            })
+
+        console.log(this.props);
     }
     render(){
         return(
