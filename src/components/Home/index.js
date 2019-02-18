@@ -7,7 +7,7 @@ import HomePromotion from './home_promotion';
 
 
 
-class index extends Component {
+class Home extends Component {
     render(){
         return(
             <div>
@@ -17,4 +17,4 @@ class index extends Component {
         )
     }
 }
-export default index;
+export default connect()(Home);
