@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {getProductsByArrival, getProductsBySale} from '../../store/actions/product_actions/productActions';
 import HomeSlider from './home_slider';
 import HomePromotion from './home_promotion';
-import CardBlock from '../../components/utils/CardBlock';
+import CardBlock from '../../components/utils/cardBlock';
 
 
 
