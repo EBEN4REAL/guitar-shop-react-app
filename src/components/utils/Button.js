@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import { timingSafeEqual } from 'crypto';
+// import { timingSafeEqual } from 'crypto';
 
 
 const Button = (props) => {
@@ -10,7 +10,7 @@ const Button = (props) => {
         switch(props.type){
             case "default": 
                 template = <Link
-                    className="link_default"
+                    className={!props.altClass ? 'link_default' : props.altClass}
                     to={props.linkTo}
                     >
                     {props.title}
