@@ -38,7 +38,7 @@ export function getProductsBySale (){
 // //////////////////////////
 
 export const getBrands = () => {
-    
+    const req = axios.get(`${PRODUCT_SERVER}`)
 }
 export const getWoods = () => {
     
