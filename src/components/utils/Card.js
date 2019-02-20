@@ -50,6 +50,17 @@ class Card extends Component {
                              }}
                             />
                     </div>
+                    <div className="button_wrapp">
+                        <Button 
+                            type="bag_link"
+                            runAction={() => {console.log('Added to cart')}}
+                            altClass="card_link"
+                            linkTo={`/product_detail/${props._id}`}
+                            addStyles={{ 
+                                margin: '10px 0 0 0'
+                             }}
+                            />
+                    </div>
                 </div>
             </div>
         )

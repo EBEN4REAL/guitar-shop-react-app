@@ -16,6 +16,9 @@ const Button = (props) => {
                     {props.title}
                 </Link>
                 break;
+            case "bag_link":
+
+                break;
             default:
                 template = '';
         }
