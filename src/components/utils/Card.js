@@ -1,6 +1,5 @@
 import React, {Component}  from 'react';
 import Button from './Button';
-import  FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 
 class Card extends Component {

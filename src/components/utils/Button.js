@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-// import { timingSafeEqual } from 'crypto';
+import  FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faShoppingBag from '@fortawesome/fontawesome-free-solidfaShoppingBag'
 
 
 const Button = (props) => {
