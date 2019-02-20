@@ -30,6 +30,13 @@ class Card extends Component {
                         </div>
                      </div>
                 </div>
+                {
+                    props.grid ? 
+                        <div className="description">
+                                Something is here
+                        </div>
+                    : null
+                }
             </div>
         )
     }
