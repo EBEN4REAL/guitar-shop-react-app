@@ -37,6 +37,9 @@ class Card extends Component {
                         </div>
                     : null
                 }
+                <div>
+                    
+                </div>
             </div>
         )
     }
