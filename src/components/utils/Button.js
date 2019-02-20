@@ -17,7 +17,10 @@ const Button = (props) => {
                 </Link>
                 break;
             case "bag_link":
-
+                template = 
+                    <div className="bag_link">
+                    
+                    </div>
                 break;
             default:
                 template = '';
