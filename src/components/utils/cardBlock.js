@@ -2,17 +2,14 @@ import React from 'react';
 import Card from '../utils/Card';
 
 const Cardblock = (props) => {
-    const renderCards = (cardList) => (
+
+    const renderCards = () => (
         props.list ? 
-            props.list.map((card, i) => {
-                return (
-                    <div>
+            props.list.map((card,i) => (
                         <Card 
                             key={i}
                             {...card}/>
-                    </div>
-                ) 
-            })
+                ))
 
         : null
     )
