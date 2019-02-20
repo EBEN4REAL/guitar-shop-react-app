@@ -2,6 +2,7 @@ import React, {Component}  from 'react'
 import PageTop from '../utils/page_top';
 
 import { connect } from "react-redux";
+import {getBrands, getWoods} from '../../store/actions/product_actions/productActions';
 
 class Shop extends Component {
     
