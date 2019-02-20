@@ -20,13 +20,13 @@ class Card extends Component {
                 <div className="action_container">
                      <div className="tags">
                         <div className="brand">
+                            {this.props.brand.name}
+                        </div>
+                        <div className="name">
                             {this.props.name}
                         </div>
-                        <div className="brand">
-                            {this.props.price}
-                        </div>
-                        <div className="brand">
-                            {this.props.title}
+                        <div className="title">
+                            ${this.props.price}
                         </div>
                      </div>
                 </div>
