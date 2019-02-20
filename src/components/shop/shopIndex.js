@@ -9,6 +9,9 @@ class Shop extends Component {
         this.props.dispatch(getBrands()).then(res => {
             console.log(res.payload)
         });
+        this.props.dispatch(getWoods()).then(res => {
+            console.log(res.payload)
+        });
     }
     
     render(){
