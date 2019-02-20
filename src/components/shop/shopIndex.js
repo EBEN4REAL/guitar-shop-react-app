@@ -13,7 +13,12 @@ class Shop extends Component {
                     title="Browse Products" />
                 <div className="container">
                     <div className="shop_wrapper">
-                    
+                        <div className="left">
+                            Left
+                        </div>
+                        <div className="left">
+                            Right
+                        </div>
                     </div>
                 </div>
             </div>
