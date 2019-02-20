@@ -20,7 +20,9 @@ const Button = (props) => {
             case "bag_link":
                 template = 
                     <div className="bag_link" onClick={() => props.run_action()}>
-
+                        <FontAwesomeIcon
+                        
+                        />
                     </div>
                 break;
             default:
