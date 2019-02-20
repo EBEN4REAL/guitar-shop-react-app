@@ -34,7 +34,7 @@ class Home extends Component {
         )
     }
 }
-function  mapStateToProps(state){
+const   mapStateToProps = (state) => {
     return {
         productsBySales: state.bySale
     }

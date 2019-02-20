@@ -10,7 +10,7 @@ const  rootReducer =  (state={} , action) => {
             state = {...state, byArrival: action.payload};
             break;
        case GET_PRODUCTS_BY_SALE:
-        state = {...state, bySale: action.payload}
+            state = {...state, bySale: action.payload}
             break;
        default:
            break;
