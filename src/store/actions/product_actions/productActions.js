@@ -23,7 +23,9 @@ export function getProductsBySale (){
       // BY SALE
     // /articles?sortBy=sold&order=desc&limit=100&skip=5
     const req = axios.get(`${PRODUCT_SERVER}articles?sortBy=sold&order=desc&limit=4`)
-        .then(res => res.data);
+        .then(res => {
+            return res.data
+        });
     return {
         type: GET_PRODUCTS_BY_SALE,
         payload: req

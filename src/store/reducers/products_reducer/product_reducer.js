@@ -7,11 +7,16 @@ import {
 const  rootReducer =  (state={} , action) => {
    switch(action.type){
        case GET_PRODUCTS_BY_ARRIVAL:
-           return {...state, byArrival: action.payload}
+            state = {...state, byArrival: action.payload};
+            break;
+        //    return {...state, byArrival: action.payload}
        case GET_PRODUCTS_BY_SALE:
-           return {...state, bySale: action.payload}
+        //    return {...state, bySale: action.payload}
+        state = {...state, bySale: action.payload}
+        break;
        default:
-           return state;
+           break;
    }
+   return state;
 }
 export default rootReducer;
