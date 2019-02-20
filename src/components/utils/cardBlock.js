@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from '../utils/Card';
 
 const Cardblock = (props) => {
     const renderCards = (cardList) => (
