@@ -9,7 +9,8 @@ class Shop extends Component {
         const products = this.props.products;
         return (
             <div>
-                Shop
+                <PageTop 
+                    title="Browse Products" />
             </div>
         )
     }
