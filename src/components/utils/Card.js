@@ -18,7 +18,9 @@ class Card extends Component {
                      }}>
                 </div>
                 <div className="action_container">
-                     
+                     <div className="tags">
+                        <div className="brand">{this.props.name}</div>
+                     </div>
                 </div>
             </div>
         )

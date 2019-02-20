@@ -24,8 +24,8 @@ class Home extends Component {
             <div>
                 <HomeSlider />
                 <CardBlock
-                    list={this.props.products.bySale}
-                    title={'Best Selling Guitars'} 
+                    list={this.props.products.byArrival}
+                    title={'New Arrivals'} 
                 />
                 <HomePromotion />
             </div>
