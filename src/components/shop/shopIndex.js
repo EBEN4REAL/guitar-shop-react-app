@@ -5,6 +5,9 @@ import { connect } from "react-redux";
 import {getBrands, getWoods} from '../../store/actions/product_actions/productActions';
 
 class Shop extends Component {
+    componentDidMount(){
+        this.props.dispatch(getBrands()).then(res => console.log(res.payload));
+    }
     
     render(){
         const products = this.props.products;
