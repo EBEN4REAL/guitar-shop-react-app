@@ -53,7 +53,7 @@ class Card extends Component {
                     <div className="button_wrapp">
                         <Button 
                             type="bag_link"
-                            runAction={() => {console.log('Added to cart')}}
+                            run_action={() => {console.log('Added to cart')}}
                             altClass="card_link"
                             linkTo={`/product_detail/${props._id}`}
                             addStyles={{ 
