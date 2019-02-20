@@ -9,11 +9,9 @@ const  rootReducer =  (state={} , action) => {
        case GET_PRODUCTS_BY_ARRIVAL:
             state = {...state, byArrival: action.payload};
             break;
-        //    return {...state, byArrival: action.payload}
        case GET_PRODUCTS_BY_SALE:
-        //    return {...state, bySale: action.payload}
         state = {...state, bySale: action.payload}
-        break;
+            break;
        default:
            break;
    }

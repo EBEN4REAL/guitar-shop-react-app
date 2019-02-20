@@ -36,7 +36,7 @@ class Home extends Component {
 }
 function  mapStateToProps(state){
     return {
-        productsByArrival: state
+        productsBySales: state.bySale
     }
 }
 
