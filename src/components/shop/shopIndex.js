@@ -6,7 +6,9 @@ import {getBrands, getWoods} from '../../store/actions/product_actions/productAc
 
 class Shop extends Component {
     componentDidMount(){
-        this.props.dispatch(getBrands()).then(res => console.log(res.payload));
+        this.props.dispatch(getBrands()).then(res => {
+            console.log(res.payload)
+        });
     }
     
     render(){
