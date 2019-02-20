@@ -1,6 +1,8 @@
 import React, {Component}  from 'react'
 import PageTop from '../utils/page_top';
 
+import { connect } from "react-redux";
+
 class Shop extends Component {
     render(){
         return (
@@ -10,4 +12,4 @@ class Shop extends Component {
         )
     }
 }
-export default Shop
+export default connect()(Shop)
