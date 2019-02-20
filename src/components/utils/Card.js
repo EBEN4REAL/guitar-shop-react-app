@@ -5,7 +5,12 @@ class Card extends Component {
         const props = this.props;
         return (
             <div className={`card_item_wrapper ${props.grid}`}>
+                <div className="image"
+                    STYLE={{ 
+                        BACKGROUND: `url(${this.renderCardImage})`
+                     }}>
 
+                </div>
             </div>
         )
     }
