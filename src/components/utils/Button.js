@@ -18,7 +18,7 @@ const Button = (props) => {
                 break;
             case "bag_link":
                 template = 
-                    <div className="bag_link" onClick={props.run_action}>
+                    <div className="bag_link" onClick={() => props.run_action()}>
 
                     </div>
                 break;
