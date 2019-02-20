@@ -26,7 +26,7 @@ class Home extends Component {
             <div>
                 <HomeSlider />
                 <CardBlock
-                    list={this.props.productsBySales}
+                    list={this.props.products}
                     title={'Best Selling Guitars'} 
                 />
                 <HomePromotion />
@@ -36,7 +36,7 @@ class Home extends Component {
 }
 const   mapStateToProps = (state) => {
     return {
-        productsBySales: state.bySale
+        products: state.products
     }
 }
 
