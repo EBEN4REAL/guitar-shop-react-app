@@ -11,7 +11,13 @@ class Shop extends Component {
             <div>
                 <PageTop 
                     title="Browse Products" />
+                <div className="container">
+                    <div className="shop_wrapper">
+                    
+                    </div>
+                </div>
             </div>
+           
         )
     }
 }
