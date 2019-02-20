@@ -46,10 +46,10 @@ export const getBrands = () => {
     }
 }
 export const getWoods = () => {
-    const req = axios.get(`${PRODUCT_SERVER}/get_brands`).then(res => res.data);
+    const req = axios.get(`${PRODUCT_SERVER}/woods`).then(res => res.data);
 
     return {
-        type: GET_BRANDS,
+        type: GET_WOODS,
         payload: req
     }
 }
