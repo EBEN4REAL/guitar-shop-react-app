@@ -12,4 +12,9 @@ class Shop extends Component {
         )
     }
 }
-export default connect()(Shop)
+const mapStateToProps = (state) => {
+    return {
+        products: state.products
+    }
+}
+export default connect(mapStateToProps)(Shop)
