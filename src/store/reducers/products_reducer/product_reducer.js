@@ -5,6 +5,7 @@ import {
 
 
 const  rootReducer =  (state={} , action) => {
+    
    switch(action.type){
        case GET_PRODUCTS_BY_ARRIVAL:
             state = {...state, byArrival: action.payload};
@@ -15,6 +16,7 @@ const  rootReducer =  (state={} , action) => {
        default:
            break;
    }
+   console.log(state);
    return state;
 }
 export default rootReducer;
