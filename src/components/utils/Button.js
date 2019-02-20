@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import  FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faShoppingBag from '@fortawesome/fontawesome-free-solidfaShoppingBag'
+import faShoppingBag from '@fortawesome/fontawesome-free-solid/faShoppingBag'
 
 
 const Button = (props) => {
@@ -21,7 +21,7 @@ const Button = (props) => {
                 template = 
                     <div className="bag_link" onClick={() => props.run_action()}>
                         <FontAwesomeIcon
-                        
+                            icon={faShoppingBag}
                         />
                     </div>
                 break;
