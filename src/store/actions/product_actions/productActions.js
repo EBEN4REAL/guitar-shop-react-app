@@ -31,3 +31,9 @@ export function getProductsBySale (){
         payload: req
     }
 }
+export const getBrands = () => {
+    
+}
+export const getWoods = () => {
+    
+}
