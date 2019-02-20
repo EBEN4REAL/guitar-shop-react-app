@@ -32,6 +32,11 @@ export function getProductsBySale (){
         payload: req
     }
 }
+
+// ///////////////////////////
+//          CATEGORIES
+// //////////////////////////
+
 export const getBrands = () => {
     
 }
