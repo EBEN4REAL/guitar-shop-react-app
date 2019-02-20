@@ -4,7 +4,9 @@ import PageTop from '../utils/page_top';
 import { connect } from "react-redux";
 
 class Shop extends Component {
+    
     render(){
+        const products = this.props.products;
         return (
             <div>
                 Shop
