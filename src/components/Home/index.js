@@ -18,8 +18,6 @@ class Home extends Component {
             .then(res => {
                 console.log(res.payload)
             })
-
-        console.log(this.props);
     }
     render(){
         return(

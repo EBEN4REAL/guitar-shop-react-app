@@ -8,15 +8,11 @@ const  rootReducer =  (state={} , action) => {
     
    switch(action.type){
        case GET_PRODUCTS_BY_ARRIVAL:
-            state = {...state, byArrival: action.payload};
-            break;
+            return  {...state, byArrival: action.payload};
        case GET_PRODUCTS_BY_SALE:
-            state = {...state, bySale: action.payload}
-            break;
+            return {...state, bySale: action.payload}
        default:
-           break;
+           return state;
    }
-   console.log(state);
-   return state;
 }
 export default rootReducer;
