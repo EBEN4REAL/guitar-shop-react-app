@@ -27,15 +27,20 @@ class Shop extends Component {
             console.log(res.payload)
         });
     }
-    handlePrice = (price) => {
+    handlePrice = (value) => {
+        console.log(value);
         const data = price;
         let array = [];
 
         for(let key in data){
-            
+            if(data[key]._id === parseInt(value,10)){
+                array = data[key].array
+            }
         }
+        return array;
     }
     handleFilters(filters, category){
+        console.log("Filter");
         console.log(filters);
         const newFilters = {...this.state.filters}
         newFilters[category] = filters;
@@ -51,7 +56,6 @@ class Shop extends Component {
     }
     
     render(){
-        console.log(this.state.filters);
         const products = this.props.products;
         return (
             <div>
