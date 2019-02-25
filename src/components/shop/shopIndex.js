@@ -67,8 +67,8 @@ class Shop extends Component {
                 <div className="container">
                     <div className="shop_wrapper">
                         <div className="left">
-                            <CollapseCheckbox
-                                initState={false}
+                         <CollapseCheckbox
+                                initState={true}
                                 title="Brands"
                                 list={products.brands}
                                 handleFilters={(filters)=> this.handleFilters(filters,'brand')}
@@ -86,8 +86,8 @@ class Shop extends Component {
                                 handleFilters={(filters)=> this.handleFilters(filters,'wood')}
                             />
                              <CollapseRadio
-                                initState={false}
-                                title="price"
+                                initState={true}
+                                title="Price"
                                 list={price}
                                 handleFilters={(filters)=> this.handleFilters(filters,'price')}
                             />
