@@ -30,11 +30,11 @@ class Shop extends Component {
 
     handlePrice = (value) => {
         const data = price;
-        console.log(data);
         let array = [];
 
         for(let key in data){
-            if(data[key]._id === parseInt(value,10)){
+            console.log(key,data);
+            if(data[key]._id === value){
                 array = data[key].array
             }
         }
