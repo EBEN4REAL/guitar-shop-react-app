@@ -66,6 +66,7 @@ class CollapseRadio extends Component {
                     </ListItem>
                     <Collapse in={this.state.open} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
+                          {/* <ListItemText primary={value.name} /> */}
                             <RadioGroup
                                 arial-label="prices"
                                 name="price"
