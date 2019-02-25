@@ -40,7 +40,7 @@ class CollapseRadio extends Component {
                 className="icon"/>
     )
     handleChange = (e) => {
-        this.props.handleFilt
+        
         this.setState({
             value: e.target.value
         })

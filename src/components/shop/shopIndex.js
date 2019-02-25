@@ -27,6 +27,9 @@ class Shop extends Component {
             console.log(res.payload)
         });
     }
+    handlePrice = () => {
+        
+    }
     handleFilters(filters, category){
         console.log(filters);
         const newFilters = {...this.state.filters}
