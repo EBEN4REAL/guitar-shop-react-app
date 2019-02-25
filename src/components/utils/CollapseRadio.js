@@ -39,6 +39,13 @@ class CollapseRadio extends Component {
                 icon={faAngleDown} 
                 className="icon"/>
     )
+    handleChange = () => (
+        
+    )
+    
+    renderList = () => {
+
+    }
     render(){
         return (
             <div>
@@ -52,10 +59,13 @@ class CollapseRadio extends Component {
                     </ListItem>
                     <Collapse in={this.state.open} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
-                            <ListItemText 
-                                primary={this.props.title}
-                                className="collapse_title"
-                            />
+                            <RadioGroup
+                                arial-label="prices"
+                                name="price"
+                                vaalue={this.state.value}
+                                onChange={this.handleChange}>
+                                    {this.renderList()}
+                            </RadioGroup>
 
                         </List>
                     </Collapse>
