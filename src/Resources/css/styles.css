@@ -570,12 +570,12 @@ footer .business_nfo .nfo {
     display:flex;
 }
 
-.shop_wrapper .left {
-    flex-grow: 1;
-}
+/* .shop_wrapper .left {
+    flex-grow: 2;
+} */
 
 .shop_wrapper .right {
-    width: 800px;
+    width: 200px;
 }
 
 .collapse_title span {
