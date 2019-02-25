@@ -40,9 +40,11 @@ class CollapseRadio extends Component {
                 className="icon"/>
     )
     handleChange = (e) => {
+        this.props.handleFilt
         this.setState({
             value: e.target.value
         })
+        console.log(e.target.value);
     }
 
     renderList = () => (
@@ -61,10 +63,6 @@ class CollapseRadio extends Component {
             <div>
                 <List style={{ borderBottom: '1px solid #dbdbdb '}}>
                     <ListItem onClick={this.handleClick} >
-                        <ListItemText 
-                            primary={this.props.title}
-                            className="collapse_title"
-                        />
                         {this.handleAngle()}
                     </ListItem>
                     <Collapse in={this.state.open} timeout="auto" unmountOnExit>
