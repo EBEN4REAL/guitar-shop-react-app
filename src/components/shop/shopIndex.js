@@ -33,8 +33,8 @@ class Shop extends Component {
         let array = [];
 
         for(let key in data){
-            console.log(key,data);
-            if(data[key]._id === value){
+            
+            if(data[key]._id === parseInt(value)){
                 array = data[key].array
             }
         }

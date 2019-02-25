@@ -44,7 +44,6 @@ class CollapseRadio extends Component {
         this.setState({
             value: e.target.value
         })
-        console.log(e.target.value);
     }
 
     renderList = () => (
