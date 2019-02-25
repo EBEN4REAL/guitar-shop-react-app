@@ -39,8 +39,10 @@ class CollapseRadio extends Component {
                 icon={faAngleDown} 
                 className="icon"/>
     )
-    handleChange = () => {
-        
+    handleChange = (e) => {
+        this.setState({
+            value: e.target.value
+        })
     }
 
     renderList = () => (
@@ -50,7 +52,7 @@ class CollapseRadio extends Component {
                     key={value._id}
                     value={`${value._id}`} 
                     control={<Radio />}
-                    label={value}/>
+                    label={value.name}/>
             ))
             : null
     )
@@ -71,7 +73,7 @@ class CollapseRadio extends Component {
                                 arial-label="prices"
                                 name="price"
                                 vaalue={this.state.value}
-                                onChange={this.handleChange}>
+                                onChange={(e) => this.handleChange(e)}>
                                     {this.renderList()}
                             </RadioGroup>
 
