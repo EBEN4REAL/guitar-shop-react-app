@@ -27,8 +27,13 @@ class Shop extends Component {
             console.log(res.payload)
         });
     }
-    handlePrice = () => {
-        
+    handlePrice = (price) => {
+        const data = price;
+        let array = [];
+
+        for(let key in data){
+            
+        }
     }
     handleFilters(filters, category){
         console.log(filters);
