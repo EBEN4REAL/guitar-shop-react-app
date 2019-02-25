@@ -28,8 +28,14 @@ class Shop extends Component {
         });
     }
     handleFilters(filters, category){
+        console.log(filters);
         const newFilters = {...this.state.filters}
         newFilters[category] = filters;
+
+        if(category ==="price"){
+            let priceValues = this.handlePrice(filters);
+            newFilters[category] = priceValues;
+        }
 
         this.setState({
             filters: newFilters
