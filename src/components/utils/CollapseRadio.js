@@ -46,7 +46,7 @@ class CollapseRadio extends Component {
     renderList = () => (
         this.props.list ? 
             this.props.list.map((value) => (
-                
+                <FormControlLabel />
             ))
             : null
     )
