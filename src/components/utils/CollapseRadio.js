@@ -39,13 +39,17 @@ class CollapseRadio extends Component {
                 icon={faAngleDown} 
                 className="icon"/>
     )
-    handleChange = () => (
+    handleChange = () => {
         
-    )
-    
-    renderList = () => {
-
     }
+
+    renderList = () => (
+        this.props.list ? 
+            this.props.list.map((value) => (
+                
+            ))
+            : null
+    )
     render(){
         return (
             <div>
